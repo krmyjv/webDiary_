@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Diary</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#0a192f;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            overflow-x:hidden;
+        }
+
+        header{
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom:4px solid #ffd60a;
+            background:#081221;
+        }
+
+        header h1{
+            font-size:32px;
+            font-weight:700;
+        }
+
+        header h1 a{
+            text-decoration:none;
+            color:#ffd60a;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:18px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd60a;
+            text-decoration:underline;
+        }
+
+        .hero{
+            flex:1;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:0 10%;
+            gap:50px;
+        }
+
+        .hero-text{
+            max-width:600px;
+        }
+
+        .hero-text h3{
+            font-size:25px;
+            color:#64b5ff;
+            margin-bottom:10px;
+        }
+
+        .hero-text h2{
+            font-size:75px;
+            font-weight:700;
+            line-height:1.1;
+            color:#ffd60a;
+            margin-bottom:20px;
+            border-bottom:8px solid #64b5ff;
+            display:inline-block;
+            padding-bottom:10px;
+        }
+
+        .hero-text p{
+            font-size:24px;
+            color:#ffffff;
+            font-weight:500;
+        }
+
+        .hero-image{
+            max-height:85vh;
+            display:flex;
+            align-items:flex-end;
+        }
+
+        .hero-image img{
+            height:100%;
+            width:auto;
+            display:block;
+            border-radius:20px;
+            filter:drop-shadow(10px 10px 20px rgba(0,0,0,0.6));
+            max-width:100%;
+        }
+
+        footer{
+            padding:20px;
+            border-top:4px solid #ffd60a;
+            text-align:center;
+            font-weight:600;
+            background:#081221;
+            color:white;
+        }
+
+        /* Responsive */
+
+        @media(max-width:900px){
+
+            .hero{
+                flex-direction:column;
+                text-align:center;
+                padding-top:50px;
+            }
+
+            .hero-text h2{
+                font-size:50px;
+            }
+
+            .hero-image{
+                height:60vh;
+            }
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav a{
+                margin:0 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <a href="index.html">My Diary</a>
+    </h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="diary.html">Diary</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h3>Hello! I'm</h3>
+
+        <h2>
+            Villacorta,<br>
+            Jay Mark M.
+        </h2>
+
+        <p>BSIT STUDENT IN COLEGIO DE STA. TERESA</p>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="jaymark.png" alt="Jay Mark">
+    </div>
+
+</section>
+
+<footer>
+   My Diary
+</footer>
+
+</body>
+</html>

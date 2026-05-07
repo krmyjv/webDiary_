@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary | My Diary</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#0a192f;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            overflow-x:hidden;
+        }
+
+        header{
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom:4px solid #ffd60a;
+            background:#081221;
+        }
+
+        header h1{
+            font-size:32px;
+            font-weight:700;
+        }
+
+        header h1 a{
+            text-decoration:none;
+            color:#ffd60a;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:18px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd60a;
+            text-decoration:underline;
+        }
+
+        section{
+            flex:1;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding:50px 20px;
+        }
+
+        .diary-entry{
+            background:#112240;
+            border:3px solid #ffd60a;
+            border-radius:20px;
+            padding:35px;
+            margin-bottom:40px;
+            width:100%;
+            max-width:900px;
+            box-shadow:10px 10px 0px rgba(0,0,0,0.5);
+            transition:0.3s;
+        }
+
+        .diary-entry:hover{
+            transform:translateY(-5px);
+        }
+
+        .diary-entry h3{
+            font-size:30px;
+            margin-bottom:15px;
+            color:#ffd60a;
+            border-bottom:4px solid #64b5ff;
+            display:inline-block;
+            padding-bottom:6px;
+        }
+
+        .diary-entry p{
+            font-size:18px;
+            line-height:1.8;
+            text-align:justify;
+            color:#dbeafe;
+        }
+
+        .diary-entry b{
+            color:#64b5ff;
+        }
+
+        footer{
+            padding:20px;
+            border-top:4px solid #ffd60a;
+            text-align:center;
+            font-weight:600;
+            background:#081221;
+            color:white;
+        }
+
+        /* Responsive */
+
+        @media(max-width:900px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav a{
+                margin:0 10px;
+                font-size:16px;
+            }
+
+            .diary-entry{
+                padding:25px;
+            }
+
+            .diary-entry h3{
+                font-size:24px;
+            }
+
+            .diary-entry p{
+                font-size:16px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <a href="index.html">My Diary</a>
+    </h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="diary.html">Diary</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section>
+
+    <div class="diary-entry">
+
+        <h3>First Year Experience</h3>
+
+        <p>
+            My first year in college was full of excitement, challenges, and unforgettable experiences.
+            Entering the world of Information Technology made me nervous at first, but I slowly adapted
+            and learned many new things with my classmates and friends.
+        </p>
+
+    </div>
+
+    <div class="diary-entry">
+
+        <h3>Programming Journey</h3>
+
+        <p>
+            During my first semester, I learned the basics of programming and computer systems.
+            Subjects like <b>Introduction to Computing</b> and <b>Computer Programming</b> helped me
+            understand how technology works and improved my logical thinking skills.
+        </p>
+
+    </div>
+
+    <div class="diary-entry">
+
+        <h3>Networking and Databases</h3>
+
+        <p>
+            In my second year, I explored more advanced topics like
+            <b>Networking</b>, <b>Information Management</b>, and
+            <b>Human Computer Interaction</b>.
+            These subjects helped me understand how systems communicate and how databases are managed.
+        </p>
+
+    </div>
+
+    <div class="diary-entry">
+
+        <h3>Application Development</h3>
+
+        <p>
+            One of the most exciting parts of my journey was learning
+            <b>Application Development</b>.
+            Creating simple websites and systems made me more motivated to become a web developer in the future.
+        </p>
+
+    </div>
+
+    <div class="diary-entry">
+
+        <h3>Sportsfest 2026</h3>
+
+        <p>
+            Aside from academics, I also enjoyed participating in school activities.
+            The <b>Sportsfest 2026</b> became one of the best memories of my college life.
+            Seeing our department win and celebrating with friends was unforgettable.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+   My Diary 
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | My Diary</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#0a192f;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            overflow-x:hidden;
+        }
+
+        header{
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom:4px solid #ffd60a;
+            background:#081221;
+        }
+
+        header h1{
+            font-size:32px;
+            font-weight:700;
+        }
+
+        header h1 a{
+            text-decoration:none;
+            color:#ffd60a;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:18px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd60a;
+            text-decoration:underline;
+        }
+
+        .container{
+            flex:1;
+            padding:50px 10%;
+            text-align:center;
+        }
+
+        .page-title{
+            font-size:70px;
+            color:#ffd60a;
+            margin-bottom:50px;
+            border-bottom:8px solid #64b5ff;
+            display:inline-block;
+            padding-bottom:10px;
+        }
+
+        .year-heading{
+            font-size:40px;
+            margin:40px 0 25px 0;
+            color:#64b5ff;
+        }
+
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+            gap:35px;
+            margin-bottom:60px;
+        }
+
+        .gallery-item{
+            background:#112240;
+            border:3px solid #ffd60a;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:10px 10px 0px rgba(0,0,0,0.5);
+            transition:0.3s;
+        }
+
+        .gallery-item:hover{
+            transform:translateY(-8px);
+        }
+
+        .gallery-item img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            display:block;
+            border-bottom:3px solid #64b5ff;
+            transition:0.3s;
+        }
+
+        .gallery-item:hover img{
+            transform:scale(1.05);
+        }
+
+        .caption{
+            padding:20px;
+            text-align:left;
+        }
+
+        .caption h3{
+            font-size:22px;
+            margin-bottom:10px;
+            color:#ffd60a;
+        }
+
+        .caption p{
+            font-size:16px;
+            line-height:1.7;
+            color:#dbeafe;
+        }
+
+        footer{
+            padding:20px;
+            border-top:4px solid #ffd60a;
+            text-align:center;
+            font-weight:600;
+            background:#081221;
+            color:white;
+        }
+
+        /* Responsive */
+
+        @media(max-width:900px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav a{
+                margin:0 10px;
+                font-size:16px;
+            }
+
+            .page-title{
+                font-size:50px;
+            }
+
+            .year-heading{
+                font-size:30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <a href="index.html">My Diary</a>
+    </h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="diary.html">Diary</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<div class="container">
+
+    <h2 class="page-title">Gallery</h2>
+
+    <h3 class="year-heading">1st Year Memories</h3>
+
+    <div class="grid">
+
+        <div class="gallery-item">
+
+            <img src="overall.png" alt="IT Week">
+
+            <div class="caption">
+                <h3>IT Week 💻</h3>
+
+                <p>
+                    One of the most exciting events during my first year.
+                    We worked together, learned new things, and enjoyed every activity.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="overall.png" alt="Sportsfest">
+
+            <div class="caption">
+                <h3>Sportsfest 🏀</h3>
+
+                <p>
+                    A memorable event full of teamwork, fun, and energy.
+                    Supporting classmates and friends made the experience unforgettable.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="overall.png" alt="Fun Run">
+
+            <div class="caption">
+                <h3>Fun Run 🏃</h3>
+
+                <p>
+                    Waking up early was worth it because the event was fun and refreshing.
+                    It was a great bonding moment with friends.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h3 class="year-heading">2nd Year Memories</h3>
+
+    <div class="grid">
+
+        <div class="gallery-item">
+
+            <img src="overall.png" alt="Champion">
+
+            <div class="caption">
+                <h3>Overall Champions 🏆</h3>
+
+                <p>
+                    One of the proudest moments of our department.
+                    Celebrating victory together made the experience extra special.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="overall.png" alt="Awards Day">
+
+            <div class="caption">
+                <h3>Awards Day 🎖️</h3>
+
+                <p>
+                    A memorable day where hard work and dedication were recognized.
+                    It reminded me to always do my best.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="overall.png" alt="Friends">
+
+            <div class="caption">
+                <h3>Friends & Memories ❤️</h3>
+
+                <p>
+                    College life became more enjoyable because of the amazing people
+                    I met along the way.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+  My Diary 
+</footer>
+
+</body>
+</html>

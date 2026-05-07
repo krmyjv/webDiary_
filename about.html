@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | My Diary</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins', sans-serif;
+        }
+
+        body{
+            background:#0a192f;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        header{
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            border-bottom:4px solid #ffd60a;
+            background:#081221;
+        }
+
+        header h1 a{
+            text-decoration:none;
+            color:#ffd60a;
+            font-size:32px;
+            font-weight:700;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:25px;
+            font-size:18px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd60a;
+            text-decoration:underline;
+        }
+
+        section{
+            flex:1;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        .container{
+            max-width:900px;
+        }
+
+        h2{
+            font-size:65px;
+            color:#ffd60a;
+            border-bottom:8px solid #64b5ff;
+            display:inline-block;
+            padding-bottom:10px;
+            margin-bottom:20px;
+        }
+
+        h3{
+            font-size:28px;
+            color:#64b5ff;
+            margin-bottom:25px;
+        }
+
+        p{
+            font-size:20px;
+            line-height:1.8;
+            color:#dbeafe;
+            margin-bottom:20px;
+        }
+
+        footer{
+            padding:20px;
+            border-top:4px solid #ffd60a;
+            text-align:center;
+            font-weight:600;
+            background:#081221;
+        }
+
+        @media(max-width:900px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav a{
+                margin:0 10px;
+                font-size:16px;
+            }
+
+            h2{
+                font-size:45px;
+            }
+
+            h3{
+                font-size:22px;
+            }
+
+            p{
+                font-size:18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <h1>
+        <a href="index.html">My Diary</a>
+    </h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="diary.html">Diary</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<section>
+
+    <div class="container">
+
+        <h2>About Me</h2>
+
+        
+        <p>
+            Hello! I'm Villacorta, Jay Mark M. 2nd Year BSIT student at Colegio de Sta. Teresa de Avila.
+            I am passionate about technology and web development.
+        
+            My goal is to become a successful Web Developer and create websites and systems
+            that can help people and businesses.
+        
+            Aside from coding, I enjoy playing basketball, playing guitar,
+            solving Rubik’s Cube, and playing online games.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 My Diary | All Rights Reserved
+</footer>
+
+</body>
+</html>
